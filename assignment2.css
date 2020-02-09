@@ -1,0 +1,54 @@
+body { font-size: 20px;
+background-color: #aaaaaa;
+
+}
+
+h1-h6 {
+  font-family: sans-serif;
+}
+
+table.stock {
+  width: 100%;
+  text-align: center;
+}
+
+ tr:nth-child(even) {
+   background-color: #efefef
+ }
+
+ tr.tr:nth-child(odd){
+   background-color: #3e3e3e;
+   font color: #ffffff;
+
+ }
+
+td.money::before {
+  content:'\0024';
+}
+
+p::first-letter{
+
+}
+p.dropcap {
+  font color: #903;
+  float: left;
+  font-size: 40px;
+  padding-top: 0px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+p.smalltext {
+  font-size: .6em
+}
+
+form.textinputs  {
+background-color: #ffffff;
+border-color: #dbdbdb;
+border-radius: 4px;
+color: inherit;
+}
+
+form:active:focus {
+  border-color: #3273dc;
+}
