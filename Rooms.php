@@ -13,7 +13,7 @@ class Rooms extends Model
  'price'
  'image'
  ];
- public function rooms() {
+ public function hotel() {
  return $this->belongsTo('App\Models\Hotel');
  }
 
