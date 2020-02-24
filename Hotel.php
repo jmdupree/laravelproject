@@ -10,7 +10,11 @@ class Hotel extends Model
  'name',
  'location',
  'description',
- 'image'
+ 'image',
+ 'address_2',
+ 'city',
+ 'state',
+ 'zip'
  ];
  public function rooms() {
  return $this->hasMany('App\Models\Room');
