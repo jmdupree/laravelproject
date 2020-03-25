@@ -10,12 +10,12 @@ class Reservations extends Model
  'user_id',
  'room_id',
  'num_of_guests',
- 'arrival'
+ 'arrival',
  'departure'
  ];
  public function rooms() {
- return $this->belongsTo('App\Models\Room');
+ return $this->belongsTo('App\Models\Rooms'); }
  public function user() {
- return $this->belongsTo('App\User');
+ return $this->belongsTo('App\User'); }
 
 }
