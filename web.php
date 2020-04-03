@@ -15,15 +15,14 @@ Route::get('/', function(){
  return '/ route';
 });
 
-Route::get('/hotels', 'HotelController@index');{
- return '/hotels route';
-};
+Route::get('/hotels', 'HotelsController@index');
+Route::get('/hotels/create', 'HotelsController@create');
+Route::post('/hotels/store','HotelsController@store');
 
-Route::group(['prefix' => 'reservations'], function(){
+Route::group(['prefix' => 'dashboard'], function() {
     Route::get('/', function(){
-	return 'Showing users homepage'; });
-    Route::get('reservations/create/{id}', 'ReservationController@create'); {
-	return 'Showing form to create reservations'; };
-    Route::reservation('reservations', function(){
-	return 'Creating reservation'; });
+        return '/dashboard route';
+    });
+    Route::get('reservations/create/{id}', 'ReservationController@create');
+    Route::resource('reservations', 'ReservationController')->except('create');
 });
